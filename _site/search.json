@@ -2,11 +2,11 @@
 [
 
 {
-"title": "Getting started with the Documentation Theme for Jekyll",
+"title": "All about Data Science Journey",
 "tags": "getting_started",
-"keywords": "sample homepage",
+"keywords": "homepage",
 "url": "index.html",
-"summary": "These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll."
+"summary": "A place to document the learning journey of data science."
 }
 ,
 
@@ -722,10 +722,46 @@
 ,
 
 {
-"title": "Welcome to MkDocs",
+"title": "",
 "tags": "",
 "keywords": "",
-"url": "puenktchenlidocs",
+"url": "pagescodeSnpcs_context_manager.html",
+"summary": ""
+}
+,
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagescodeSnpcs_docstring.html",
+"summary": ""
+}
+,
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagescodeSnpcs_dry.html",
+"summary": ""
+}
+,
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagescodeSnpcs_efficient_code.html",
+"summary": ""
+}
+,
+
+{
+"title": "Writing Python functions",
+"tags": "",
+"keywords": "",
+"url": "pagescodeSnpcs_python_functions.html",
 "summary": ""
 }
 ,

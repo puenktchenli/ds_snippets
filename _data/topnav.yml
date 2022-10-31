@@ -12,10 +12,10 @@ topnav:
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: Jekyll Help
+    - title: Page Help
       folderitems:
-        - title: Jekyll Talk
-          external_url: https://talk.jekyllrb.com
+        # - title: Jekyll Talk
+        #   external_url: https://talk.jekyllrb.com
         - title: Jekyll documentation
           external_url: http://jekyllrb.com/docs/home/
         - title: Jekyll on Stack Overflow

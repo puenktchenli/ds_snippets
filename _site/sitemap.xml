@@ -534,7 +534,31 @@
   
   
   <url>
-    <loc>http://localhost:4000/puenktchenli/docs/</loc>
+    <loc>http://localhost:4000/pages/codeSnp/cs_context_manager.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/codeSnp/cs_docstring.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/codeSnp/cs_dry.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/codeSnp/cs_efficient_code.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/codeSnp/cs_python_functions.html</loc>
   </url>
   
   

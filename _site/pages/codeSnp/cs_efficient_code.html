@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" ">
-<title>Welcome to MkDocs | Data Science Learning Journey</title>
+<title> | Data Science Learning Journey</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -134,12 +134,8 @@
                 
                 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Jekyll Help<b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page Help<b class="caret"></b></a>
                     <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="https://talk.jekyllrb.com" target="_blank" rel="noopener">Jekyll Talk</a></li>
-                        
                         
                         
                         <li><a href="http://jekyllrb.com/docs/home/" target="_blank" rel="noopener">Jekyll documentation</a></li>
@@ -181,7 +177,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the Welcome to MkDocs page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the  page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -201,7 +197,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Welcome to MkDocs">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -289,7 +285,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Welcome to MkDocs</h1>
+   <h1 class="post-title-main"></h1>
 </div>
 
 
@@ -328,30 +324,129 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/https://github.com/puenktchenli/ds_snippets/tree/gh-pagespuenktchenli/docs/index.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/codeSnp/cs_efficient_code.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
+   <p>#clean #efficient #pythonic #zen</p>
 
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
+<h1 id="efficient-code">Efficient code</h1>
 
-<h2 id="commands">Commands</h2>
+<blockquote>
+  <p>[!Note]- The Zen of Python
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren’t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one– and preferably only one –obvious way to do it.
+Although that way may not be obvious at first unless you’re Dutch.
+Now is better than never.
+Although never is often better than <em>right</em> now.
+If the implementation is hard to explain, it’s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea – let’s do more of those!</p>
+</blockquote>
 
+<h2 id="built-ins">Built-ins</h2>
+<h3 id="built-in-types">Built-in types</h3>
+<p><code class="language-plaintext highlighter-rouge">list</code>, <code class="language-plaintext highlighter-rouge">tuple</code>, <code class="language-plaintext highlighter-rouge">set</code>, <code class="language-plaintext highlighter-rouge">dict</code> , and others</p>
+<h3 id="built-in-funcitons">Built-in funcitons</h3>
 <ul>
-  <li><code class="language-plaintext highlighter-rouge">mkdocs new [dir-name]</code> - Create a new project.</li>
-  <li><code class="language-plaintext highlighter-rouge">mkdocs serve</code> - Start the live-reloading docs server.</li>
-  <li><code class="language-plaintext highlighter-rouge">mkdocs build</code> - Build the documentation site.</li>
-  <li><code class="language-plaintext highlighter-rouge">mkdocs -h</code> - Print help message and exit.</li>
+  <li>
+    <p>`range()</p>
+  </li>
+  <li>
+    <p>`enumerate()</p>
+  </li>
 </ul>
 
-<h2 id="project-layout">Project layout</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">indexed_letters2</span> <span class="o">=</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">letters</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
 </code></pre></div></div>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">map</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">map</code> with <code class="language-plaintext highlighter-rouge">lambda</code></p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sqrd_nums</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">nums</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="built-in-modules">Built-in modules</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">os</code> , <code class="language-plaintext highlighter-rouge">sys</code>, <code class="language-plaintext highlighter-rouge">itertools</code> , <code class="language-plaintext highlighter-rouge">collections</code>, <code class="language-plaintext highlighter-rouge">math</code> and others</li>
+</ul>
+
+<h2 id="packing">packing</h2>
+<h3 id="packing-with--operator-more">Packing with * Operator (<a href="https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/">more…</a>)</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> 
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> 
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span>
+ <span class="mi">3</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># to unpack the object of enumerate to a list, using * 
+</span><span class="n">indexed_names_unpack</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+</code></pre></div></div>
+
+<h2 id="examining-runtime--timeit">Examining runtime  `%timeit</h2>
+<p>(<a href="https://campus.datacamp.com/courses/writing-efficient-python-code/timing-and-profiling-code?ex=2">more</a>)</p>
+<ul>
+  <li>Caluculate runtime with IPython magic command `%timeit</li>
+  <li><strong>Magic commands</strong>: enhancements on top of normal Python syntax
+    <ul>
+      <li>Prefixed by the <code class="language-plaintext highlighter-rouge">%</code> character</li>
+      <li>Link to docs</li>
+      <li>See all available magic commands with <code class="language-plaintext highlighter-rouge">%lsmagic</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># run time estimated the time 
+</span><span class="o">%</span><span class="n">timeit</span> <span class="n">rand_nums</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="specifying-number-of-runsloops">Specifying number of runs/loops</h3>
+<ul>
+  <li>Setting the number of runs(<code class="language-plaintext highlighter-rouge">-r</code>) and /or loops (<code class="language-plaintext highlighter-rouge">-n</code>)
+```python
+%timeit -r2 -n10 rand_nums = np.random.rand(1000)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Saving  `%timeit` output by using `-o
+```python
+times = %timeit -o rand_nums = np.random.rand(1000)
+times.timings
+times.best
+times.worst
+
+</code></pre></div></div>
+
+<h3 id="using-cell-magic-mode-timeit">Using cell magic mode <code class="language-plaintext highlighter-rouge">%%timeit</code></h3>
+<p>press <code class="language-plaintext highlighter-rouge">SHIFT+ENTER</code> l</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">timeit</span>
+<span class="n">hero_wts_lbs</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">wt</span> <span class="ow">in</span> <span class="n">wts</span><span class="p">:</span>
+    <span class="n">hero_wts_lbs</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">wt</span> <span class="o">*</span> <span class="mf">2.20462</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>##</p>
 
 
     <div class="tags">
@@ -376,7 +471,7 @@ docs/
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 . All rights reserved. <br />
- Site last generated: Oct 31, 2022 <br />
+ Site last generated: Nov 1, 2022 <br />
 <p><img src="images/company_logo.png" alt="Company logo"/></p>
                 </div>
             </div>
