@@ -1,4 +1,4 @@
-# machine_learning_snippets
+# Data Science learning Snippets
 
 This repo contains snippets during my data science learning journey. 
 
