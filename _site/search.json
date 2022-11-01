@@ -20,6 +20,15 @@
 ,
 
 {
+"title": "Machine Learning Basics with Scikit-learn",
+"tags": "formatting",
+"keywords": "ml, sklearn",
+"url": "ml_basics.html",
+"summary": "Basics for Programming Machine Learning"
+}
+,
+
+{
 "title": "About the theme&#39;s author",
 "tags": "getting_started",
 "keywords": "documentation theme, jekyll, technical writers, help authoring tools, hat replacements",

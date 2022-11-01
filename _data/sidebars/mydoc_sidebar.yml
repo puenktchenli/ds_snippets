@@ -43,7 +43,7 @@ entries:
     # - title: Support
     #   url: /mydoc_support.html
     #   output: web, pdf
-
+#########################################
   - title: Coding and Snippets
     output: web, pdf
     folderitems:
@@ -51,6 +51,19 @@ entries:
     - title: Clean code concept
       url: /cs_clean_code.html
       output: web, pdf
+
+      subfolders:
+      - title: Machine Learning
+        output: web
+        subfolderitems:
+
+        - title: Sklearn Basics
+          url: /ml_basics.html
+          output: web
+
+        - title: Gradient descent
+          url: /ml_GD.html
+          output: web
 
     # - title: 5.0 Release notes
     #   url: /mydoc_release_notes_50.html
@@ -100,7 +113,7 @@ entries:
     - title: Postgres
       url: /mydoc_yaml_tutorial.html
       output: web, pdf
-
+################################
   - title: Authoring
     output: web, pdf
 
@@ -236,32 +249,7 @@ entries:
 #       output: web, pdf
 
 #     - title: Pushing builds to server
-#       url: /mydoc_push_build_to_server.html
-#       output: web, pdf
 
-#     - title: Publishing on Github Pages
-#       url: /mydoc_publishing_github_pages.html
-#       output: web, pdf
-
-#   - title: Special layouts
-#     output: web, pdf
-
-#     folderitems:
-#     - title: Knowledge-base layout
-#       url: /mydoc_kb_layout.html
-#       output: web, pdf
-
-#     - title: Glossary layout
-#       url: /mydoc_glossary.html
-#       output: web, pdf
-
-#     - title: FAQ layout
-#       url: /mydoc_faq_layout.html
-#       output: web, pdf
-
-#     - title: Shuffle layout
-#       url: /mydoc_shuffle.html
-#       output: web, pdf
 
   - title: Troubleshooting
     output: web, pdf
@@ -275,7 +263,7 @@ entries:
 #   - title: Tag archives
 #     output: web
 #     folderitems:
-
+################################
     - title: Tag archives overview
       url: /mydoc_tag_archives_overview.html
       output: web

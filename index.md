@@ -16,13 +16,6 @@ summary: A place to document the learning journey of data science.
 
 
 
-
-
-
-
-
-
-
 <!-- Follow these instructions to build the theme.
 
 ### 1. Download the theme

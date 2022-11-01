@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="You can use fenced code blocks with the language specified after the first set of backtick fences.">
-<meta name="keywords" content="formatting,  dcode samples syntax highlighting">
-<title>Code samples | Data Science Learning Journey</title>
+<meta name="description" content="Basics for Programming Machine Learning">
+<meta name="keywords" content="formatting,  ml, sklearn">
+<title>Machine Learning Basics with Scikit-learn | Data Science Learning Journey</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -94,25 +94,6 @@
         });
     </script>
     
-    <!-- Include the standard DataTables bits -->
-    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.css">
-    <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.13/js/jquery.dataTables.js"></script>
-    <!-- First, this walks through the tables that occur between ...-begin
-         and ...-end and add the "datatable" class to them.
-         Then it invokes DataTable's standard initializer
-         Credit here: http://www.beardedhacker.com/blog/2015/08/28/add-class-attribute-to-markdown-table/
-      -->
-    <script>
-      $(document).ready(function(){
-          $('div.datatable-begin').nextUntil('div.datatable-end', 'table').addClass('display');
-          $('table.display').DataTable( {
-              paging: true,
-              stateSave: true,
-              searching: true
-          });
-       });
-    </script>
-    
 
 </head>
 <body>
@@ -184,7 +165,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the Code samples page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the Machine Learning Basics with Scikit-learn page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -204,7 +185,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Code samples">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Machine Learning Basics with Scikit-learn">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -277,7 +258,7 @@
                   
                   
                   
-                  <li><a title="Sklearn Basics" href="ml_basics.html">Sklearn Basics</a></li>
+                  <li class="active"><a title="Sklearn Basics" href="ml_basics.html">Sklearn Basics</a></li>
                   
                   
                   
@@ -492,7 +473,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Code samples</h1>
+   <h1 class="post-title-main">Machine Learning Basics with Scikit-learn</h1>
 </div>
 
 
@@ -500,7 +481,7 @@
 <div class="post-content">
 
    
-    <div class="summary">You can use fenced code blocks with the language specified after the first set of backtick fences.</div>
+    <div class="summary">Basics for Programming Machine Learning</div>
    
 
     
@@ -533,25 +514,104 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/mydoc/mydoc_code_samples.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/ml_snp/ml_basics.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h2 id="code-samples">Code Samples</h2>
+   <h1 id="ml-coding-with-scikit-learn">ML coding with scikit-learn</h1>
+<p>#code_ml</p>
 
-<p>Use fenced code blocks with the language specified, like this:</p>
+<h2 id="libraries-for-ml">Libraries for ML</h2>
+<hr />
+<p>#library_ml  #ml_library</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>```js
-console.log('hello');
-````
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># sampling data: over/under-sampling
+</span><span class="kn">from</span> <span class="nn">imblearn.over_sampling</span> <span class="kn">import</span> <span class="n">RandomOverSampler</span> 
+
+<span class="c1"># Data pre-processing: scaling and splitting
+</span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">train_test_split</span><span class="p">,</span> <span class="n">cross_val_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
+
+<span class="c1"># impute, deal with missing date
+</span><span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
+
+<span class="c1"># data label encoding for classification data
+</span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">LabelEncoder</span>
+
+<span class="c1"># pipline
+</span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="kn">import</span> <span class="n">Pipeline</span>
+<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">ColumnTransformer</span>
+
+<span class="c1"># Logistic regression
+</span><span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+
+<span class="c1"># Cross-validation
+</span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">cross_val_score</span><span class="p">,</span> <span class="n">KFold</span>
+
+<span class="c1"># Hyperparameter tunning
+</span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="kn">import</span> <span class="n">GridSearchCV</span><span class="p">,</span> <span class="n">RandomizedSearchCV</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">SGDClassifier</span>
+
+<span class="c1"># KNN algorithm
+</span><span class="kn">from</span> <span class="nn">sklearn.neighbors</span> <span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+
+<span class="c1"># Naive Bayes
+</span><span class="kn">from</span> <span class="nn">sklearn.naive_bayes</span> <span class="kn">import</span> <span class="n">GaussianNB</span>
+
+<span class="c1"># Decision tree
+</span><span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">DecisionTreeClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.tree</span> <span class="kn">import</span> <span class="n">plot_tree</span>
+
+<span class="c1"># ensemble methods
+</span><span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">RandomForestClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">VotingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">StackingClassifier</span>
+<span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="kn">import</span> <span class="n">SVC</span>
+<span class="kn">from</span> <span class="nn">sklearn.ensemble</span> <span class="kn">import</span> <span class="n">AdaBoostClassifier</span>
+
+<span class="c1"># Import functionality for cloning a model
+</span><span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="kn">import</span> <span class="n">clone</span>
+
+<span class="c1"># model evaluation
+</span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">accuracy_score</span><span class="p">,</span> 
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">f1_score</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">roc_curve</span><span class="p">,</span> <span class="n">recall_score</span><span class="p">,</span> <span class="n">precision_score</span>
+
+
+<span class="c1"># Ignore warnings
+</span><span class="kn">import</span> <span class="nn">warnings</span>
+<span class="n">warnings</span><span class="p">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s">"ignore"</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p><strong>Result:</strong></p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello</span><span class="dl">'</span><span class="p">);</span>
+<h2 id="defining-x-and-y">Defining X and y</h2>
+<p>#define_xy</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Defining X and y
+</span><span class="n">features</span> <span class="o">=</span> <span class="n">iris</span><span class="p">.</span><span class="n">columns</span><span class="p">.</span><span class="n">tolist</span><span class="p">()</span>
+<span class="n">features</span><span class="p">.</span><span class="n">remove</span><span class="p">(</span><span class="s">'species'</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">iris</span><span class="p">[</span><span class="n">features</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">iris</span><span class="p">.</span><span class="n">species</span>
 </code></pre></div></div>
 
-<p>For the list of supported languages you can use (similar to <code class="language-plaintext highlighter-rouge">js</code> for JavaScript), see <a href="https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers">Supported languages</a>.</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Separating the target variable
+</span><span class="n">X</span> <span class="o">=</span> <span class="n">balance_data</span><span class="p">.</span><span class="n">values</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">balance_data</span><span class="p">.</span><span class="n">values</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h2 id="split-the-data">Split the data</h2>
+<p>#datasplit #train_test_split</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">test_size</span> <span class="o">=</span> <span class="mf">0.3</span><span class="p">,</span><span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># by default, test_size = 0.25
+</span></code></pre></div></div>
+
+<h2 id="general-syntax">General Syntax</h2>
+<p>```python
+from sklearn.module import Model</p>
+
+<p>model = Model()
+model.fit(X,y)
+predictions =model.predict(X_new)</p>
 
 
     <div class="tags">
@@ -584,7 +644,7 @@ console.log('hello');
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 . All rights reserved. <br />
-<span>Page last updated:</span> July 3, 2016<br/> Site last generated: Nov 1, 2022 <br />
+<span>Page last updated:</span> Oct 31, 2022<br/> Site last generated: Nov 1, 2022 <br />
 <!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
                 </div>
             </div>            
