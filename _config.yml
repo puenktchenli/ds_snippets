@@ -9,7 +9,7 @@ topnav_title: Data Science Content
 site_title: Data Science Learning Journey
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-# company_name: Copyright 2021 Google LLC
+company_name: Copyright Li Ki
 # this appears in the footer
 
 github_editme_path: puenktchenli/ds_snippets/tree/gh-pages/
@@ -34,7 +34,6 @@ exclude:
 # these are the files and directories that jekyll will exclude from the build
 
 feedback_subject_line: Data Science Learning Journey
-
 feedback_email: xieli@gmx.com
 # used as a contact email for the Feedback link in the top navigation bar
 
