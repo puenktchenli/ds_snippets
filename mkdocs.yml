@@ -5,7 +5,7 @@ site_name:
   # Repository
 repo_name: Github Repo
 repo_url:
-  https://github.com/neuefische/muc-ds-22-3-daily-review
+  https://github.com/puenktchenli/ds_snippets/
 
   # External stylesheet
 extra_css:
