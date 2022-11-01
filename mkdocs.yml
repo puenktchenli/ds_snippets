@@ -1,0 +1,57 @@
+# Project information
+site_name:
+  Daily Review
+
+  # Repository
+repo_name: Github Repo
+repo_url:
+  https://github.com/neuefische/muc-ds-22-3-daily-review
+
+  # External stylesheet
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - include_dir_to_nav
+
+# Theme
+theme:
+  language: en
+  name: material
+  font:
+    text: Inter
+    code: Roboto Mono
+  palette:
+    - scheme: light
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: dark
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - content.code.annotate
+    - content.tooltips
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/library-outline
+markdown_extensions:
+  - admonition
+
+    # Site Navigation
+nav:
+  - Home: index.md
+  - Protocols: protocols
+  - Cheat-Sheets: cheatsheets
