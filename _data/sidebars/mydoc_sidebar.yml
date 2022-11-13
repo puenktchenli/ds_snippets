@@ -29,7 +29,7 @@ entries:
       type: homepage
 
     - title: Clean Code
-      url: /unml_clustering.html
+      url: 
       output: web, pdf
 
     # - title: Supported features
