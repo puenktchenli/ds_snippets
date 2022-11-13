@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="You can add a button to your pages that allows people to add comments.">
-<meta name="keywords" content="navigation,  annotations, comments, feedback">
-<title>Commenting on files | Data Science Learning Journey</title>
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title> | Data Science Learning Journey</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -165,7 +165,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the Commenting on files page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the  page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -185,7 +185,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Commenting on files">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -213,104 +213,38 @@
                 
 
 <ul id="mysidebar" class="nav">
-  <li class="sidebarTitle">Data Science Journey 0.0.0</li>
+  <li class="sidebarTitle"> </li>
   
   
-  
-      
   
   <li>
-      <a title="Introduction" href="#">Introduction</a>
+      <a title="Products" href="#">Products</a>
       <ul>
           
           
           
-          <li><a title="Introduction" href="index.html">Introduction</a></li>
+          <li><a title="News" href="news.html">News</a></li>
           
           
           
           
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="Supervised Machine Learning" href="#">Supervised Machine Learning</a>
-      <ul>
           
           
-          
-          <li><a title="Clean code concept" href="cs_clean_code.html">Clean code concept</a></li>
-          
-          
-          
-          <li class="subfolders">
-              <a title="Machine Learning" href="#">Machine Learning</a>
-              <ul>
-                  
-                  
-                  
-                  <li><a title="Sklearn Basics" href="ml_basics.html">Sklearn Basics</a></li>
-                  
-                  
-                  
-                  
-                  
-                  <li><a title="Gradient descent" href="ml_GD.html">Gradient descent</a></li>
-                  
-                  
-                  
-              </ul>
-          </li>
+          <li><a title="Theme instructions" href="mydoc_introduction.html">Theme instructions</a></li>
           
           
           
           
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="Git" href="#">Git</a>
-      <ul>
           
           
-          
-          <li><a title="Frequent used Git" href="mydoc_release_notes_60.html">Frequent used Git</a></li>
+          <li><a title="Product 1" href="p1_landing_page.html">Product 1</a></li>
           
           
           
           
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="Unsupervised Machine Learning" href="#">Unsupervised Machine Learning</a>
-      <ul>
           
           
-          
-          <li><a title="Pages" href="mydoc_pages.html">Pages</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-  
-  <li>
-      <a title="Troubleshooting" href="#">Troubleshooting</a>
-      <ul>
-          
-          
-          
-          <li><a title="Troubleshooting" href="mydoc_troubleshooting.html">Troubleshooting</a></li>
+          <li><a title="Product 2" href="p2_landing_page.html">Product 2</a></li>
           
           
           
@@ -339,15 +273,13 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Commenting on files</h1>
+   <h1 class="post-title-main"></h1>
 </div>
 
 
 
 <div class="post-content">
 
-   
-    <div class="summary">You can add a button to your pages that allows people to add comments.</div>
    
 
     
@@ -380,73 +312,95 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/mydoc/mydoc_commenting_on_files.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/unml/unml_clustering.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h2 id="about-the-review-process">About the review process</h2>
+   <p>un# Clustering</p>
 
-<p>If you’re using the doc as code approach, you might also consider using the same techniques for reviewing the doc as people use in reviewing code. This approach will involve using Github to edit the files.</p>
+<p>K-Means and agglomerative clustering are rather partitioning, rather than clustering.</p>
 
-<p>There’s an Edit me button on each page on this theme. This button allows collaborators to edit the content on Github.</p>
+<h2 id="k-means-clustering">K-Means Clustering</h2>
 
-<p>Here’s the code for that button on the page.html layout for GitHub:</p>
+<ul>
+  <li>with <em>K centroid</em></li>
+  <li>simplicity of algorithm</li>
+  <li>scales well with large datasets</li>
+  <li><em>with-in</em> sum of squre: cost function</li>
+  <li>Cluster mean: a vector</li>
+</ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if site.github_editme_path %}
+<h3 id="how-to-find-the-hp-k">How to find the HP <em>K</em></h3>
 
-&lt;a target="_blank" rel="noopener" href="https://github.com/{{site.github_editme_path}}/{{page.folder}}{{page.url | append: ".md"}}{% endif %}" class="btn btn-default githubEditButton" role="button"&gt;&lt;i class="fa fa-github fa-lg"&gt;&lt;/i&gt; Edit me&lt;/a&gt;
+<ul>
+  <li>Elbow method: test different amount of clusters K, and calculate performance metric.</li>
+  <li>Silhouette plot (knives): silhouette coefficients (-1, 1)</li>
+</ul>
 
-{% endif %}
+<h3 id="drawbacks-of-k-mean-clustering">Drawbacks of K-Mean clustering</h3>
+<ul>
+  <li>cluster everything, including noise</li>
+  <li>Not good at clustering:
+    <ul>
+      <li>data with different density;</li>
+      <li>data clustered not round-shaped. not able to capture complex structure</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Note</strong>: scale variables before clustering</p>
+
+<h2 id="hierarchical-clustering">Hierarchical Clustering</h2>
+
+<h3 id="hp">HP:</h3>
+<ul>
+  <li>distance metric <em>d</em></li>
+  <li>similarity metric <em>D</em></li>
+</ul>
+
+<h3 id="agglomerative-algorithm">Agglomerative algorithm</h3>
+<p>a buttom-up clustering; starting with everything with one cluster; stop at certain number of cluster.</p>
+
+<h3 id="viz">Viz</h3>
+<h4 id="dendrogram">Dendrogram</h4>
+<ul>
+  <li>Hight: distance between merging clusters</li>
+  <li></li>
+</ul>
+
+<h3 id="drawbacks">Drawbacks</h3>
+<ul>
+  <li>gets messy with large datasets.</li>
+  <li>not able to capture complex structure</li>
+  <li>not able to capture noise</li>
+</ul>
+
+<h2 id="dbscan">DBSCAN</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Density-Based Spatial Clustering of Applications with Noise
 </code></pre></div></div>
 
-<p>and here for GitLab:</p>
+<h3 id="hp-1">HP:</h3>
+<ul>
+  <li><em>eps</em>: epsilon, max distance between points of a cluster</li>
+  <li><em>min_samples</em> (of a cluster)</li>
+  <li>every points gets a label in the end: <em>Core</em>, <em>Bounday</em> or <em>Noise</em></li>
+</ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if site.gitlab_editme_path %}
+<h3 id="advantages">Advantages</h3>
+<ul>
+  <li>identify complex cluster</li>
+  <li>able to capture complex structure</li>
+  <li>Able to distinguish noise</li>
+</ul>
 
-&lt;a target="_blank" rel="noopener" href="https://github.com/{{site.gitlab_editme_path}}/{{page.folder}}{{page.url | append: ".md"}}{% endif %}" class="btn btn-default githubEditButton" role="button"&gt;&lt;i class="fa fa-gitlab fa-lg"&gt;&lt;/i&gt; Edit me&lt;/a&gt;
-
-{% endif %}
-</code></pre></div></div>
-
-<p>In your configuration file, edit the value for <code class="language-plaintext highlighter-rouge">github_editme_path</code> (or for Gitlab: <code class="language-plaintext highlighter-rouge">gitlab_editme_path</code>). For example, you might create a branch called “reviews” on your Github repo. Then you would add something like this in your configuration file for the ‘github_editme_path’: tomjoht/documentation-theme-jekyll/edit/reviews. Here “tomjoht” is my github account name. The repo name is “documentation-theme-jekyll”. The “reviews” name is the branch.</p>
-
-<p>To suppress this button, comment out the <code class="language-plaintext highlighter-rouge">github_editme_path</code> in the _config.yml file.</p>
-
-<h2 id="add-reviewers-as-collaborators">Add reviewers as collaborators</h2>
-
-<p>If you want people to collaborate on your project so that their edits get committed to a branch on your project, you need to add them as collaborators. For your Github repo, click <strong>Settings</strong> and add the collaborators on the Collaborators tab using their Github usernames.</p>
-
-<p>If you don’t want to allow anyone to commit to your Github branch, don’t add the reviewers as collaborators. When someone makes an edit, Github will fork the theme. The person’s edit then will appear as a pull request to your repo. You can then choose to merge the change indicated in the pull or not.</p>
-
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> When you process pull requests, you have to accept everything or nothing. You can’t pick and choose which changes you’ll merge. Therefore you’ll probably want to edit the branch you’re planning to merge or ask the contributor to make some changes to the fork before processing the pull request.</div>
-
-<h2 id="workflow">Workflow</h2>
-
-<p>Users will make edits in your “reviews” branch (or whatever you want to call it). You can then commit those edits as you make updates.</p>
-
-<p>When you’re finished making all updates in the branch, you can merge the branch into the master.</p>
-
-<p>Note that if you’re making updates online, those updates will be out of sync with any local edits.</p>
-
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> <b>Warning:</b> Don’t make edits both online using Github’s browser-based interface AND offline on your local machine using your local tools. When you try to push from your local, you’ll likely get a merge conflict error. Instead, make sure you do a pull and update on your local after making any edits online.</div>
-
-<h2 id="proseio">Prose.io</h2>
-
-<p>Prose.io is an overlay on Github that would allow people to make comments in an easier interface. If you simply go to <a href="http://prose.io">prose.io</a>, it asks to authorize your Github account, and so it will read files directly from Github but in the Prose.io interface.</p>
-
-<p>[]:</p>
+<hr />
+<p>Useful links: 
+<a href="https://www.naftaliharris.com/blog/">naftaliharris.com</a>
+<a href="https://www.scikit-yb.org/en/latest/quickstart.html">yellowbrick library</a>: not sure applicable for M1, recommended lib for error analysis</p>
 
 
 
     <div class="tags">
-        
-        <b>Tags: </b>
-        
-        
-        
-        <a href="tag_navigation.html" class="btn btn-default navbar-btn cursorNorm" role="button">navigation</a>
-        
-        
         
     </div>
 
@@ -468,7 +422,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 Copyright Li Ki. All rights reserved. <br />
-<span>Page last updated:</span> November 30, 2016<br/> Site last generated: Nov 13, 2022 <br />
+ Site last generated: Nov 13, 2022 <br />
 <!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
                 </div>
             </div>            

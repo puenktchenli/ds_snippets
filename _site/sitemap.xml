@@ -26,19 +26,7 @@
   
   
   <url>
-    <loc>http://localhost:4000/cs_clean_code.html</loc>
-  </url>
-  
-  
-  
-  <url>
     <loc>http://localhost:4000/index.html</loc>
-  </url>
-  
-  
-  
-  <url>
-    <loc>http://localhost:4000/ml_basics.html</loc>
   </url>
   
   
@@ -427,6 +415,12 @@
   
   
   
+  <url>
+    <loc>http://localhost:4000/ml_basics.html</loc>
+  </url>
+  
+  
+  
   
   
   
@@ -456,13 +450,19 @@
   
   
   <url>
-    <loc>http://localhost:4000/pages/ml_snp/13_time_series.html</loc>
+    <loc>http://localhost:4000/pages/suml/13_time_series.html</loc>
   </url>
   
   
   
   <url>
-    <loc>http://localhost:4000/post/code_snp/ml_random_forest.html</loc>
+    <loc>http://localhost:4000/pages/unml/unml_clustering.html</loc>
+  </url>
+  
+  
+  
+  <url>
+    <loc>http://localhost:4000/pages/unml/unml_dimensionalty_reduction.html</loc>
   </url>
   
   

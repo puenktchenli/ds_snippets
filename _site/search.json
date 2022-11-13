@@ -2,29 +2,11 @@
 [
 
 {
-"title": "Clean and Efficient Codes",
-"tags": "formatting",
-"keywords": "clean_code, tips, PEP",
-"url": "cs_clean_code.html",
-"summary": "A brief guide for clean codes"
-}
-,
-
-{
 "title": "All about Data Science Journey",
 "tags": "getting_started",
 "keywords": "homepage",
 "url": "index.html",
 "summary": "A place to document the learning journey of data science."
-}
-,
-
-{
-"title": "Machine Learning Basics with Scikit-learn",
-"tags": "formatting",
-"keywords": "ml, sklearn",
-"url": "ml_basics.html",
-"summary": "Basics for Programming Machine Learning"
 }
 ,
 
@@ -605,10 +587,19 @@
 ,
 
 {
+"title": "Machine Learning Basics with Scikit-learn",
+"tags": "formatting",
+"keywords": "ml, sklearn",
+"url": "ml_basics.html",
+"summary": "Basics for Programming Machine Learning"
+}
+,
+
+{
 "title": "",
 "tags": "",
 "keywords": "",
-"url": "pagesml_snp13_time_series.html",
+"url": "pagessuml13_time_series.html",
 "summary": ""
 }
 ,
@@ -617,7 +608,16 @@
 "title": "",
 "tags": "",
 "keywords": "",
-"url": "postcode_snpml_random_forest.html",
+"url": "pagesunmlunml_clustering.html",
+"summary": ""
+}
+,
+
+{
+"title": "",
+"tags": "",
+"keywords": "",
+"url": "pagesunmlunml_dimensionalty_reduction.html",
 "summary": ""
 }
 ,
