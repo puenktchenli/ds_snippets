@@ -20,6 +20,7 @@ github_editme_path: puenktchenli/ds_snippets/tree/gh-pages/
 
 # google_analytics: 
 # if you have google-analytics ID, put it in. if not, edit this value to blank.
+gem "github-pages", group: :jekyll_plugins
 
 host: 127.0.0.1
 # the preview server used. Leave as is.

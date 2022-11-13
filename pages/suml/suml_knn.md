@@ -12,28 +12,24 @@ folder: pages/suml
 
 # *K*-nearest neighbors algorithm (KNN)
 ---
-#knn #lazy_algorithm distance_metric
-
 
 ## Distance Metrics
-#minkowski #euclidean #manhattan
 ### Minkowski Distance (most used)
-$ \ Minkowski\: Distance = \sqrt[n]{\sum_{i=1}^k |x_i - y_i|^n}) $  
-$ \ Minkowski\: Distance = \sqrt[n]{\sum_{i=1}^k side\:length^n} $ 
+$Minkowski\: Distance = \sqrt[n]{\sum_{i=1}^k |x_i - y_i|^n}$  
+$Minkowski\: Distance = \sqrt[n]{\sum_{i=1}^k side\:length^n}$ 
 
 ### Euclidean Distance
-#euclidean  #Pythagorean 
+
 $\ Euclidean\: Distance = \sqrt{\sum_{i=1}^k |x_i - y_i|^2}$ 
 $\ Euclidean\: Distance = \sqrt{\sum_{i=1}^k side\:length^2}$
 
 ### Manhattan Distance
-#manhattan
 $\ Manhattan\: Distance = \sum_{i=1}^k |x_i - y_i|$
 $\ Manhattan\: Distance = \sum_{i=1}^k side\: length$
 
 ## Pros and Cons
 
-#### Pros
+### Pros
 * No assumptions about data
 * Simple algorithm — easy to understand
 * Can be used for classification and regression

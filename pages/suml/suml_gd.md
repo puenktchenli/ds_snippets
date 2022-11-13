@@ -7,15 +7,16 @@ summary: Learning note for gradient descent
 sidebar: mydoc_sidebar
 permalink: suml_gd.html
 folder: pages/suml
+katex: True
 ---
 
 ## Normal Equation for min Cost function
 OLS:
-minimize the sum of squared residuals. $$e^{2}_1+e^{2}_2+...+e^{n}_1$$
+minimize the sum of squared residuals. $$ e^{2}_1+e^{2}_2+...+e^{n}_1 $$
 
-	$b=(X^TX)^{-1}X^{T}y$
+$b=(X^TX)^{-1}X^{T}y$
 
-	㊟inverting a metric is heavy computing $O(n^{3})$
+note: inverting a metric is heavy computing $O(n^{3})$
 
 
 ## **Gradient Descent** (GD)

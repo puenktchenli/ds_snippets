@@ -45,6 +45,31 @@
 
 
 
+    <!DOCTYPE html>
+<!-- KaTeX requires the use of the HTML5 doctype. Without it, KaTeX may not render properly -->
+<html>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" integrity="sha384-Juol1FqnotbkyZUT5Z7gUPjQ9gzlwCENvUZTpQBAPxtusdwFLRy382PSDx5UUJ4/" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.js" integrity="sha384-97gW6UIJxnlKemYavrqDHSX3SiygeOwIZhwyOKRfSaf0JWKRVj9hLASHgFTzT+0O" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          renderMathInElement(document.body, {
+            // customised options
+            // • auto-render specific keys, e.g.:
+            delimiters: [
+                {left: '$$', right: '$$', display: true},
+                {left: '$', right: '$', display: false},
+                {left: '\\(', right: '\\)', display: false},
+                {left: '\\[', right: '\\]', display: true}
+            ],
+            // • rendering keys, e.g.:
+            throwOnError : false
+          });
+      });
+  </script>
+  </head>
+  ...
+</html>
     <script>
         $(document).ready(function() {
             // Initialize navgoco with default options
@@ -95,6 +120,9 @@
     </script>
     
 
+    
+
+
 </head>
 <body>
 <!-- Navigation -->
@@ -119,46 +147,8 @@
 
 
                 
-                
-                
-                <li><a href="https://github.com/puenktchenli/ds_snippets" target="_blank" rel="noopener">My GitHub</a></li>
-                
-                
-                
-                <li><a href="news">News</a></li>
-                
-                
-                
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
-                
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page Help<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="http://jekyllrb.com/docs/home/" target="_blank" rel="noopener">Jekyll documentation</a></li>
-                        
-                        
-                        
-                        <li><a href="">Jekyll on Stack Overflow</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        
-                        
-                        <li><a href="mydoc_introduction.html">Jekyll Documentation Theme</a></li>
-                        
-                        
-                    </ul>
-                </li>
-                
                 
                 
 			<li>
@@ -215,45 +205,6 @@
 <ul id="mysidebar" class="nav">
   <li class="sidebarTitle"> </li>
   
-  
-  
-  <li>
-      <a title="Products" href="#">Products</a>
-      <ul>
-          
-          
-          
-          <li><a title="News" href="news.html">News</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Theme instructions" href="mydoc_introduction.html">Theme instructions</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Product 1" href="p1_landing_page.html">Product 1</a></li>
-          
-          
-          
-          
-          
-          
-          <li><a title="Product 2" href="p2_landing_page.html">Product 2</a></li>
-          
-          
-          
-          
-      </ul>
-   </li>
-     
-      
-      
       <!-- if you aren't using the accordion, uncomment this block:
          <p class="external">
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
@@ -312,7 +263,7 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/unml/unml_dimensionalty_reduction.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/post/unml/unml_dimensionalty_reduction.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
@@ -348,7 +299,7 @@ $('#toc').on('click', 'a', function() {
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 Copyright Li Ki. All rights reserved. <br />
- Site last generated: Nov 13, 2022 <br />
+ Site last generated: Nov 14, 2022 <br />
 <!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
                 </div>
             </div>            
