@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Version 6.0 of the Documentation theme for Jekyll reverts back to relative links so you can view the files offline. Additionally, you can store pages in subd...">
-<meta name="keywords" content="formatting,  release notes, announcements, what's new, new features">
-<title>Workflow maps | Data Science Learning Journey</title>
+<meta name="description" content="Learning note for knn">
+<meta name="keywords" content="formatting,  notes, knn">
+<title>K-nearest Neighbors Algorithm | Data Science Learning Journey</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -127,7 +127,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the Workflow maps page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the K-nearest Neighbors Algorithm page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -147,7 +147,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Workflow maps">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="K-nearest Neighbors Algorithm">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -208,7 +208,7 @@
           
           
           
-          <li><a title="KNN" href="suml_knn.html">KNN</a></li>
+          <li class="active"><a title="KNN" href="suml_knn.html">KNN</a></li>
           
           
           
@@ -292,7 +292,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Workflow maps</h1>
+   <h1 class="post-title-main">K-nearest Neighbors Algorithm</h1>
 </div>
 
 
@@ -300,7 +300,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Version 6.0 of the Documentation theme for Jekyll reverts back to relative links so you can view the files offline. Additionally, you can store pages in subdirectories. Templates for alerts and images are available.</div>
+    <div class="summary">Learning note for knn</div>
    
 
     
@@ -333,149 +333,46 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/mydoc/mydoc_workflow_maps.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/suml/suml_knn.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h2 id="workflow-maps-overview">Workflow maps overview</h2>
+   <h1 id="k-nearest-neighbors-algorithm-knn"><em>K</em>-nearest neighbors algorithm (KNN)</h1>
+<hr />
+<p>#knn #lazy_algorithm distance_metric</p>
 
-<p>You can implement workflow maps at the top of your pages. This is helpful if you’re describing a process that involves multiple topics. See the following demos:</p>
+<h2 id="distance-metrics">Distance Metrics</h2>
+<p>#minkowski #euclidean #manhattan</p>
+<h3 id="minkowski-distance-most-used">Minkowski Distance (most used)</h3>
+<p>$\ Minkowski: Distance = \sqrt[n]{\sum_{i=1}^k |x_i - y_i|^n}$ 
+$\ Minkowski: Distance = \sqrt[n]{\sum_{i=1}^k side:length^n}$</p>
 
+<h3 id="euclidean-distance">Euclidean Distance</h3>
+<p>#euclidean  #Pythagorean 
+$\ Euclidean: Distance = \sqrt{\sum_{i=1}^k |x_i - y_i|^2}$ 
+$\ Euclidean: Distance = \sqrt{\sum_{i=1}^k side:length^2}$</p>
+
+<h3 id="manhattan-distance">Manhattan Distance</h3>
+<p>#manhattan
+$\ Manhattan: Distance = \sum_{i=1}^k |x_i - y_i|$
+$\ Manhattan: Distance = \sum_{i=1}^k side: length$</p>
+
+<h2 id="pros-and-cons">Pros and Cons</h2>
+
+<h4 id="pros">Pros</h4>
 <ul>
-  <li>[Simple workflow maps][p2_sample1]</li>
-  <li>[Complex workflow maps][p2_sample6]</li>
+  <li>No assumptions about data</li>
+  <li>Simple algorithm — easy to understand</li>
+  <li>Can be used for classification and regression
+    <h3 id="cons">Cons</h3>
+  </li>
+  <li>High memory requirement — All of the training data must be present in memory in order to calculate the closest K neighbors</li>
+  <li>Sensitive to irrelevant features</li>
+  <li>Sensitive to the scale of the data since we’re computing the distance to the closest K points</li>
 </ul>
 
-<h2 id="simple-workflow-maps">Simple workflow maps</h2>
-
-<ol>
-  <li>
-    <p>Create an include at _includes/custom/usermap.html, where usermap.html contains the workflow and links you want. See the usermap.html as an example. It should look something like this:</p>
-
-    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"userMap"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"p2_sample1.html"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"box box1"</span><span class="nt">&gt;</span>Connect to ADB<span class="nt">&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"arrow"</span><span class="nt">&gt;</span>→<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"p2_sample2.html"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"box box2"</span><span class="nt">&gt;</span>Download and Build the Starter Kit<span class="nt">&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"arrow"</span><span class="nt">&gt;</span>→<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"p2_sample3.html"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"box box3"</span><span class="nt">&gt;</span>Take a Tour<span class="nt">&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"arrow"</span><span class="nt">&gt;</span>→<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"p2_sample4.html"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"box box4"</span><span class="nt">&gt;</span>Load Your Widgets<span class="nt">&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"arrow"</span><span class="nt">&gt;</span>→<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"content"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"p2_sample5.html"</span><span class="nt">&gt;&lt;div</span> <span class="na">class=</span><span class="s">"box box5"</span><span class="nt">&gt;</span>Query for Something<span class="nt">&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"clearfix"</span><span class="nt">&gt;&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div>    </div>
-
-    <p>You can have only 5 possible workflow squares across. Also, the links must be manually coded HTML like those shown, not automated Markdown links. (This is because the boxes are linked.)</p>
-  </li>
-  <li>
-    <p>Where you want the user maps to appear, add the sidebar properties shown in red below:</p>
-
-    <pre>
----
-title: Sample 1 Topic
-keywords: sample
-summary: "This is just a sample topic..."
-sidebar: product2_sidebar
-permalink: p2_sample1
-folder: product2
-<span class="red">simple_map</span>: true
-<span class="red">map_name</span>: usermap
-<span class="red">box_number</span>: 1
----
-</pre>
-
-    <p>In the page.html layout, the following code gets activated when <code class="language-plaintext highlighter-rouge">simple_map</code> equals <code class="language-plaintext highlighter-rouge">true</code>:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if page.simple_map == true %}
-    
-&lt;script&gt;
-    $(document).ready ( function(){
-        $('.box{{page.box_number}}').addClass('active');
-    });
-&lt;/script&gt;
-    
-{% include custom/{{page.map_name}}.html %}
-    
-{% endif %}
-</code></pre></div>    </div>
-
-    <p>The script adds an <code class="language-plaintext highlighter-rouge">active</code> class to the box number, which automatically makes the active workflow box become highlighted based on the page you’re viewing.</p>
-
-    <p>The <code class="language-plaintext highlighter-rouge">map_name</code> gets used as the name of the included file.</p>
-  </li>
-</ol>
-
-<h2 id="complex-workflow-maps">Complex workflow maps</h2>
-
-<p>The simpler user workflow allows for 5 workflow steps. If you have a more complex workflow, with multiple possible steps, branching, and more, consider using a complex workflow map. This map uses modals to show a list of instructions and links for each step.</p>
-
-<ol>
-  <li>
-    <p>Create an include at _includes/custom/usermapcomplex.html, where usermapcomplex.html contains the workflow and links you want. See the usermapcomplex.html as an example. The code in that file simply implements Bootstrap modals to create the pop-up boxes. Add your custom content inside the modal body:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;div class="modal-body"&gt;
-&lt;p&gt;This is just dummy text ... Your first steps should be to get started. You will need to do the following:&lt;/p&gt;
-    
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="p2_sample6.html"&gt;Sample 6&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="p2_sample7.html"&gt;Sample 7&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="p2_sample8.html"&gt;Sample 8&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-    &lt;p&gt;If you run into any of these setup issues, you must solve them before you can continue on.&lt;/p&gt;
-    
-          &lt;/div&gt;
-</code></pre></div>    </div>
-
-    <p>The existing usermapcomplex.html file just has 3 workflow square modals. If you need more, duplicate the modal code. In the duplicated code, make sure you make the following values in red unique (but the same within the same modal):</p>
-
-    <pre>
- &lt;button type="button" class="btn btn-default btn-lg modalButton3" data-toggle="modal" data-target="<span class="red">#myModal3</span>"&gt;Publish your app&lt;/button&gt;
-       <!-- Modal -->
-       &lt;div class="modal fade" id="<span class="red">myModal3</span>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"&gt;
- </pre>
-  </li>
-  <li>
-    <p>For each topic where you want the modal to appear, insert the following properties in your frontmatter:</p>
-
-    <pre>
----
-title: Sample 6 Topic
-keywords: sample
-summary: "This is just a sample topic..."
-sidebar: product2_sidebar
-permalink: p2_sample6
-<span class="red">complex_map: true</span>
-<span class="red">map_name: usermapcomplex</span>
-<span class="red">box_number: 1</span>
-toc: false
-folder: product2
----
-</pre>
-
-    <p>When your frontmatter contains <code class="language-plaintext highlighter-rouge">complex_map</code> equal to <code class="language-plaintext highlighter-rouge">true</code>, the following code gets activated in the page layout.html file:</p>
-
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>In the page.html layout, the following code gets activated when `map` equals `true`:
-        
-</code></pre></div>    </div>
-    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{% if page.complex_map == true %}
-    
-&lt;script&gt;
-    $(document).ready ( function(){
-        $('.modalButton{{page.box_number}}').addClass('active');
-    });
-&lt;/script&gt;
-    
-{% include custom/{{page.map_name}}.html %}
-    
-{% endif %}
-```  ```
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<p>[]:</p>
-
+<h2 id="usecase">Usecase</h2>
+<p>music prediction</p>
 
 
     <div class="tags">
@@ -508,7 +405,7 @@ folder: product2
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 Copyright Li Ki. All rights reserved. <br />
-<span>Page last updated:</span> July 16, 2016<br/> Site last generated: Nov 13, 2022 <br />
+<span>Page last updated:</span> 13.Nov.2022<br/> Site last generated: Nov 13, 2022 <br />
 <!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
                 </div>
             </div>            

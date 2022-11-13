@@ -1,16 +1,4 @@
----
-title: Unsupervised Learning - Clustering
-tags: [formatting]
-keywords: notes, tips, cautions, warnings, admonitions
-last_updated: 13.Nov.2022
-summary: Learning note for unsupervised clustering
-sidebar: mydoc_sidebar
-permalink: unml_clustering.html
-folder: pages/unml
----
-
-
-# Clustering
+un# Clustering
 
 K-Means and agglomerative clustering are rather partitioning, rather than clustering. 
 

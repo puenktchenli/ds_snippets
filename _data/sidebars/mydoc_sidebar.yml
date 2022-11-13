@@ -6,18 +6,18 @@ entries:
   version: 0.0.0
   folders:
 
-  - title:
-    output: pdf
-    type: frontmatter
-    folderitems:
-    - title:
-      url: /titlepage.html
-      output: pdf
-      type: frontmatter
-    - title:
-      url: /tocpage.html
-      output: pdf
-      type: frontmatter
+  # - title:
+  #   output: pdf
+  #   type: frontmatter
+  #   folderitems:
+  #   - title:
+  #     url: /titlepage.html
+  #     output: pdf
+  #     type: frontmatter
+  #   - title:
+  #     url: /tocpage.html
+  #     output: pdf
+  #     type: frontmatter
 
   - title: Introduction
     output: web, pdf
@@ -28,9 +28,9 @@ entries:
       output: web, pdf
       type: homepage
 
-    # - title: Statistics
-    #   url: /mydoc_introduction.html
-    #   output: web, pdf
+    - title: Clean Code
+      url: /unml_clustering.html
+      output: web, pdf
 
     # - title: Supported features
     #   url: /mydoc_supported_features.html
@@ -48,33 +48,21 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Clean code concept
-      url: /cs_clean_code.html
+    - title: KNN
+      url: /suml_knn.html
       output: web, pdf
 
-      subfolders:
-      - title: Machine Learning
-        output: web
-        subfolderitems:
+    - title: Gradient descent
+      url: /suml_gd.html
+      output: web
 
-        - title: Sklearn Basics
-          url: /ml_basics.html
-          output: web
-
-        - title: Gradient descent
-          url: /ml_GD.html
-          output: web
-
-    # - title: 5.0 Release notes
-    #   url: /mydoc_release_notes_50.html
-    #   output: web, pdf
-
-  - title: Git
+#########################################
+  - title: Unsupervised Machine Learning
     output: web, pdf
     folderitems:
 
-    - title: Frequent used Git
-      url: /mydoc_release_notes_60.html
+    - title: Clustering
+      url: /unml_clustering.html
       output: web, pdf
 
   # - title: Linux

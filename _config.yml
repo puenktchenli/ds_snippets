@@ -66,7 +66,7 @@ collections:
 defaults:
   -
     scope:
-      path: ""
+      path: "pages/ml"
       type: "pages"
     values:
       layout: "page"
@@ -75,26 +75,25 @@ defaults:
       search: true
       sidebar: home_sidebar
       topnav: topnav
-  -
-    scope:
-      path: ""
-      type: "tooltips"
-    values:
-      layout: "page"
-      search: true
-      tooltip: true
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "tooltips"
+  #   values:
+  #     layout: "page"
+  #     search: true
+  #     tooltip: true
 
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true
-      # if you don't want to use Commento.io and just hide comments, change true to false wherever you see the comments property
-      search: true
-      sidebar: home_sidebar
-      topnav: topnav
+  # -
+  #   scope:
+  #     path: ""
+  #     type: "posts"
+  #   values:
+  #     layout: "post"
+  #     comments: true
+  #     search: true
+  #     sidebar: home_sidebar
+  #     topnav: topnav
 
 # these are defaults used for the frontmatter for these file types
 
@@ -113,7 +112,7 @@ description: "A collection of the learning journey documentation of data science
 # baseurl: /documentation-theme-jekyll
 
 
-github: [metadata]
+# github: [metadata]
 
 
 # Copyright 2022 Li Ki

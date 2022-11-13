@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" ">
-<title>Page Not Found | Data Science Learning Journey</title>
+<title> | Data Science Learning Journey</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -127,7 +127,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the Page Not Found page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the  page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -147,7 +147,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Page Not Found">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -196,7 +196,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Page Not Found</h1>
+   <h1 class="post-title-main"></h1>
 </div>
 
 
@@ -235,11 +235,92 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/404.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/post/unml/unml_clustering.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <p>Sorry, but the page you were trying to view does not exist. Try searching for it or looking at the URL to see if it looks correct.</p>
+   <p>un# Clustering</p>
+
+<p>K-Means and agglomerative clustering are rather partitioning, rather than clustering.</p>
+
+<h2 id="k-means-clustering">K-Means Clustering</h2>
+
+<ul>
+  <li>with <em>K centroid</em></li>
+  <li>simplicity of algorithm</li>
+  <li>scales well with large datasets</li>
+  <li><em>with-in</em> sum of squre: cost function</li>
+  <li>Cluster mean: a vector</li>
+</ul>
+
+<h3 id="how-to-find-the-hp-k">How to find the HP <em>K</em></h3>
+
+<ul>
+  <li>Elbow method: test different amount of clusters K, and calculate performance metric.</li>
+  <li>Silhouette plot (knives): silhouette coefficients (-1, 1)</li>
+</ul>
+
+<h3 id="drawbacks-of-k-mean-clustering">Drawbacks of K-Mean clustering</h3>
+<ul>
+  <li>cluster everything, including noise</li>
+  <li>Not good at clustering:
+    <ul>
+      <li>data with different density;</li>
+      <li>data clustered not round-shaped. not able to capture complex structure</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Note</strong>: scale variables before clustering</p>
+
+<h2 id="hierarchical-clustering">Hierarchical Clustering</h2>
+
+<h3 id="hp">HP:</h3>
+<ul>
+  <li>distance metric <em>d</em></li>
+  <li>similarity metric <em>D</em></li>
+</ul>
+
+<h3 id="agglomerative-algorithm">Agglomerative algorithm</h3>
+<p>a buttom-up clustering; starting with everything with one cluster; stop at certain number of cluster.</p>
+
+<h3 id="viz">Viz</h3>
+<h4 id="dendrogram">Dendrogram</h4>
+<ul>
+  <li>Hight: distance between merging clusters</li>
+  <li></li>
+</ul>
+
+<h3 id="drawbacks">Drawbacks</h3>
+<ul>
+  <li>gets messy with large datasets.</li>
+  <li>not able to capture complex structure</li>
+  <li>not able to capture noise</li>
+</ul>
+
+<h2 id="dbscan">DBSCAN</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Density-Based Spatial Clustering of Applications with Noise
+</code></pre></div></div>
+
+<h3 id="hp-1">HP:</h3>
+<ul>
+  <li><em>eps</em>: epsilon, max distance between points of a cluster</li>
+  <li><em>min_samples</em> (of a cluster)</li>
+  <li>every points gets a label in the end: <em>Core</em>, <em>Bounday</em> or <em>Noise</em></li>
+</ul>
+
+<h3 id="advantages">Advantages</h3>
+<ul>
+  <li>identify complex cluster</li>
+  <li>able to capture complex structure</li>
+  <li>Able to distinguish noise</li>
+</ul>
+
+<hr />
+<p>Useful links: 
+<a href="https://www.naftaliharris.com/blog/">naftaliharris.com</a>
+<a href="https://www.scikit-yb.org/en/latest/quickstart.html">yellowbrick library</a>: not sure applicable for M1, recommended lib for error analysis</p>
+
 
 
     <div class="tags">
