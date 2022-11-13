@@ -33,7 +33,9 @@ $\ Manhattan\: Distance = \sum_{i=1}^k side\: length$
 * No assumptions about data
 * Simple algorithm — easy to understand
 * Can be used for classification and regression
+* 
 ### Cons
+
 * High memory requirement — All of the training data must be present in memory in order to calculate the closest K neighbors
 * Sensitive to irrelevant features
 * Sensitive to the scale of the data since we’re computing the distance to the closest K points

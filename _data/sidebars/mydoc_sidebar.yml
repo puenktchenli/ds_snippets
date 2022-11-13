@@ -102,13 +102,13 @@ entries:
   #     url: /mydoc_yaml_tutorial.html
   #     output: web, pdf
 ################################
-  - title: Unsupervised Machine Learning
-    output: web, pdf
+  # - title: Unsupervised Machine Learning
+  #   output: web, pdf
 
-    folderitems:
-    - title: Pages
-      url: /mydoc_pages.html
-      output: web, pdf
+  #   folderitems:
+  #   - title: Pages
+  #     url: /mydoc_pages.html
+  #     output: web, pdf
 
     
 
