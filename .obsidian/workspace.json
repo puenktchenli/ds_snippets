@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "b4c8108e282282af",
+    "type": "split",
+    "children": [
+      {
+        "id": "5336794110192be2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "879a17565b1bbc25",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "pages/ml_snp/12_tensorflow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "45545444e508136e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2022-11-02.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b214ef81707fa2bc",
+    "type": "split",
+    "children": [
+      {
+        "id": "045c789d9e8283fe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bd9030a6f76149a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bc9fa85166431f35",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#efficient",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c7b2154e5c626524",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 396.5
+  },
+  "right": {
+    "id": "3377f09ff6a11faf",
+    "type": "split",
+    "children": [
+      {
+        "id": "079578ff59d28613",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "26a837feb59bf69f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "2022-11-02.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f66ee9555a17344a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "2022-11-02.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "54204b0aafda562e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "79bab5be5e2c734b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "2022-11-02.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "45545444e508136e",
+  "lastOpenFiles": [
+    "pages/code_snp/cs_clean_code.md",
+    "pages/ml_snp/00_basics.md",
+    "pages/ml_snp/13_time_series.md",
+    "pages/ml_snp/12_tensorflow.md",
+    "pages/ml_snp/10_random_forest.md",
+    "pages/ml_snp/11_neural_network.md"
+  ]
+}
