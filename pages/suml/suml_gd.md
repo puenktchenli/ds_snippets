@@ -11,13 +11,12 @@ folder: pages/suml
 
 ## Normal Equation for min Cost function
 OLS:
-#normalequation 
-	minimize the sum of squared residuals.
-	$e^{2}_1+e^{2}_2+...+e^{n}_1$
+minimize the sum of squared residuals. $$e^{2}_1+e^{2}_2+...+e^{n}_1$$
 
 	$b=(X^TX)^{-1}X^{T}y$
 
 	㊟inverting a metric is heavy computing $O(n^{3})$
+
 
 ## **Gradient Descent** (GD)
 #gradient_descent 

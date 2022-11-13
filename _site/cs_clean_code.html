@@ -4,9 +4,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Learning note for knn">
-<meta name="keywords" content="formatting,  notes, knn">
-<title>K-nearest Neighbors Algorithm | Data Science Learning Journey</title>
+<meta name="description" content="A brief guide for clean codes">
+<meta name="keywords" content="formatting,  clean_code, tips, PEP">
+<title>Clean and Efficient Codes | Data Science Learning Journey</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -130,7 +130,7 @@
 
 
 
-  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the K-nearest Neighbors Algorithm page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:xieli@gmx.com?subject=Data Science Learning Journey feedback&body=I have some feedback about the Clean and Efficient Codes page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
 
 </li>
 
@@ -150,7 +150,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="K-nearest Neighbors Algorithm">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Clean and Efficient Codes">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -211,7 +211,7 @@
           
           
           
-          <li class="active"><a title="KNN" href="suml_knn.html">KNN</a></li>
+          <li><a title="KNN" href="suml_knn.html">KNN</a></li>
           
           
           
@@ -295,7 +295,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">K-nearest Neighbors Algorithm</h1>
+   <h1 class="post-title-main">Clean and Efficient Codes</h1>
 </div>
 
 
@@ -303,7 +303,7 @@
 <div class="post-content">
 
    
-    <div class="summary">Learning note for knn</div>
+    <div class="summary">A brief guide for clean codes</div>
    
 
     
@@ -336,46 +336,129 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/suml/suml_knn.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" rel="noopener" href="https://github.com/puenktchenli/ds_snippets/tree/gh-pages/pages/code_snp/cs_clean_code.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
 
     
 
-   <h1 id="k-nearest-neighbors-algorithm-knn"><em>K</em>-nearest neighbors algorithm (KNN)</h1>
-<hr />
-<p>#knn #lazy_algorithm distance_metric</p>
+   <p>#clean #efficient #pythonic #zen</p>
 
-<h2 id="distance-metrics">Distance Metrics</h2>
-<p>#minkowski #euclidean #manhattan</p>
-<h3 id="minkowski-distance-most-used">Minkowski Distance (most used)</h3>
-<p>$ \ Minkowski: Distance = \sqrt[n]{\sum_{i=1}^k |x_i - y_i|^n}) $<br />
-$ \ Minkowski: Distance = \sqrt[n]{\sum_{i=1}^k side:length^n} $</p>
+<h1 id="efficient-code">Efficient code</h1>
 
-<h3 id="euclidean-distance">Euclidean Distance</h3>
-<p>#euclidean  #Pythagorean 
-$\ Euclidean: Distance = \sqrt{\sum_{i=1}^k |x_i - y_i|^2}$ 
-$\ Euclidean: Distance = \sqrt{\sum_{i=1}^k side:length^2}$</p>
+<blockquote>
+  <p>[!Note]- The Zen of Python
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren’t special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one– and preferably only one –obvious way to do it.
+Although that way may not be obvious at first unless you’re Dutch.
+Now is better than never.
+Although never is often better than <em>right</em> now.
+If the implementation is hard to explain, it’s a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea – let’s do more of those!</p>
+</blockquote>
 
-<h3 id="manhattan-distance">Manhattan Distance</h3>
-<p>#manhattan
-$\ Manhattan: Distance = \sum_{i=1}^k |x_i - y_i|$
-$\ Manhattan: Distance = \sum_{i=1}^k side: length$</p>
-
-<h2 id="pros-and-cons">Pros and Cons</h2>
-
-<h4 id="pros">Pros</h4>
+<h2 id="built-ins">Built-ins</h2>
+<h3 id="built-in-types">Built-in types</h3>
+<p><code class="language-plaintext highlighter-rouge">list</code>, <code class="language-plaintext highlighter-rouge">tuple</code>, <code class="language-plaintext highlighter-rouge">set</code>, <code class="language-plaintext highlighter-rouge">dict</code> , and others</p>
+<h3 id="built-in-funcitons">Built-in funcitons</h3>
 <ul>
-  <li>No assumptions about data</li>
-  <li>Simple algorithm — easy to understand</li>
-  <li>Can be used for classification and regression
-    <h3 id="cons">Cons</h3>
+  <li>
+    <p>`range()</p>
   </li>
-  <li>High memory requirement — All of the training data must be present in memory in order to calculate the closest K neighbors</li>
-  <li>Sensitive to irrelevant features</li>
-  <li>Sensitive to the scale of the data since we’re computing the distance to the closest K points</li>
+  <li>
+    <p>`enumerate()</p>
+  </li>
 </ul>
 
-<h2 id="usecase">Usecase</h2>
-<p>music prediction</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">indexed_letters2</span> <span class="o">=</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">letters</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">map</code></p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">map</code> with <code class="language-plaintext highlighter-rouge">lambda</code></p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sqrd_nums</span> <span class="o">=</span> <span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span><span class="p">,</span> <span class="n">nums</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="built-in-modules">Built-in modules</h3>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">os</code> , <code class="language-plaintext highlighter-rouge">sys</code>, <code class="language-plaintext highlighter-rouge">itertools</code> , <code class="language-plaintext highlighter-rouge">collections</code>, <code class="language-plaintext highlighter-rouge">math</code> and others</li>
+</ul>
+
+<h2 id="packing">packing</h2>
+<h3 id="packing-with--operator-more">Packing with * Operator (<a href="https://stackabuse.com/unpacking-in-python-beyond-parallel-assignment/">more…</a>)</h3>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">*</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span> 
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">a</span> 
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> 
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span>
+ <span class="mi">3</span>
+</code></pre></div></div>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># to unpack the object of enumerate to a list, using * 
+</span><span class="n">indexed_names_unpack</span> <span class="o">=</span> <span class="p">[</span><span class="o">*</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">start</span><span class="o">=</span><span class="mi">1</span><span class="p">)]</span>
+</code></pre></div></div>
+
+<h2 id="examining-runtime--timeit">Examining runtime  `%timeit</h2>
+<p>(<a href="https://campus.datacamp.com/courses/writing-efficient-python-code/timing-and-profiling-code?ex=2">more</a>)</p>
+<ul>
+  <li>Caluculate runtime with IPython magic command `%timeit</li>
+  <li><strong>Magic commands</strong>: enhancements on top of normal Python syntax
+    <ul>
+      <li>Prefixed by the <code class="language-plaintext highlighter-rouge">%</code> character</li>
+      <li>Link to docs</li>
+      <li>See all available magic commands with <code class="language-plaintext highlighter-rouge">%lsmagic</code></li>
+    </ul>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># run time estimated the time 
+</span><span class="o">%</span><span class="n">timeit</span> <span class="n">rand_nums</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">random</span><span class="p">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<h3 id="specifying-number-of-runsloops">Specifying number of runs/loops</h3>
+<ul>
+  <li>Setting the number of runs(<code class="language-plaintext highlighter-rouge">-r</code>) and /or loops (<code class="language-plaintext highlighter-rouge">-n</code>)
+```python
+%timeit -r2 -n10 rand_nums = np.random.rand(1000)</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+### Saving  `%timeit` output by using `-o
+```python
+times = %timeit -o rand_nums = np.random.rand(1000)
+times.timings
+times.best
+times.worst
+
+</code></pre></div></div>
+
+<h3 id="using-cell-magic-mode-timeit">Using cell magic mode <code class="language-plaintext highlighter-rouge">%%timeit</code></h3>
+<p>press <code class="language-plaintext highlighter-rouge">SHIFT+ENTER</code> l</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">%%</span><span class="n">timeit</span>
+<span class="n">hero_wts_lbs</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">wt</span> <span class="ow">in</span> <span class="n">wts</span><span class="p">:</span>
+    <span class="n">hero_wts_lbs</span><span class="p">.</span><span class="n">append</span><span class="p">(</span><span class="n">wt</span> <span class="o">*</span> <span class="mf">2.20462</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>##</p>
 
 
     <div class="tags">
@@ -408,7 +491,7 @@ $\ Manhattan: Distance = \sum_{i=1}^k side: length$</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2022 Copyright Li Ki. All rights reserved. <br />
-<span>Page last updated:</span> 13.Nov.2022<br/> Site last generated: Nov 13, 2022 <br />
+<span>Page last updated:</span> Oct 31, 2022<br/> Site last generated: Nov 13, 2022 <br />
 <!-- <p><img src="images/company_logo.png" alt="Company logo"/></p> -->
                 </div>
             </div>            

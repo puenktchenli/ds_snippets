@@ -18,8 +18,8 @@ folder: pages/suml
 ## Distance Metrics
 #minkowski #euclidean #manhattan
 ### Minkowski Distance (most used)
-$\ Minkowski\: Distance = \sqrt[n]{\sum_{i=1}^k |x_i - y_i|^n}$ 
-$\ Minkowski\: Distance = \sqrt[n]{\sum_{i=1}^k side\:length^n}$
+$ \ Minkowski\: Distance = \sqrt[n]{\sum_{i=1}^k |x_i - y_i|^n}) $  
+$ \ Minkowski\: Distance = \sqrt[n]{\sum_{i=1}^k side\:length^n} $ 
 
 ### Euclidean Distance
 #euclidean  #Pythagorean 

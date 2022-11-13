@@ -2,6 +2,15 @@
 [
 
 {
+"title": "Clean and Efficient Codes",
+"tags": "formatting",
+"keywords": "clean_code, tips, PEP",
+"url": "cs_clean_code.html",
+"summary": "A brief guide for clean codes"
+}
+,
+
+{
 "title": "All about Data Science Journey",
 "tags": "getting_started",
 "keywords": "homepage",
